@@ -1,5 +1,3 @@
-Langkah Langkah
-
 LANGKAH PEMROSESAN DATA 
 - Instal modul geopy, pip install geopy
 - instal modul pandas, pip install pandas
