@@ -21,7 +21,7 @@ def divide_and_conquer_search(data, keyword):
 
     def keyword_match(item):
         name = str(item.get("name", "")).lower()
-        review = str(item.get("review_text", "")).lower()
+        review = str(item.get("reviews_text", "")).lower()
         return keyword.lower() in name or keyword.lower() in review
 
     filtered_left = [i for i in left_result if keyword_match(i)]
@@ -56,7 +56,7 @@ def recommend_places(keyword, top_n=10):
         print(f"Alamat          : {row['address']}")
         print(f"Rating          : {row['rating']}")
         print(f"Jarak dari Malang : {row['distance_km']} km")
-        print(f"Ulasan Singkat  : {row['review_text'][:150]}...")
+        print(f"Ulasan Singkat  : {row['reviews_text'][:150]}...")
         print(f"Kategori        : {', '.join(row['types']) if isinstance(row['types'], list) else row['types']}")
     print("\n=============================\n")
 
