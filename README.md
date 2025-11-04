@@ -1,7 +1,6 @@
 Langkah Langkah
 
-LANGKAH PEMROSESAN DATA (Dimas)
-
+LANGKAH PEMROSESAN DATA 
 - Instal modul geopy, pip install geopy
 - instal modul pandas, pip install pandas
 - Dikarenakan sudah ada raw datanya Jalankan preprocessing.py (fetch_places.py digunakan untuk mengambil raw data dari google api maps)
