@@ -26,15 +26,19 @@ py src/main.py -f data/Scraping_Clustering_Wisata_Malang.xlsx
 
 ## 3. Alur Pemrosesan Sistem
 Setelah perintah dijalankan, sistem akan melakukan tahapan berikut:
-    1. Mendeteksi koordinat pengguna secara otomatis menggunakan library geocoder melalui alamat IP perangkat.
-    2. Meminta input kata kunci destinasi wisata dari pengguna.
-    3. Melakukan pembersihan data teks (menghapus karakter aneh, simbol, dan emoticon yang tidak diperlukan).
-    4. Memproses data menggunakan algoritma Divide and Conquer, dengan tahapan:
-        🔹 Divide: Memecah dataset menjadi beberapa subkelompok.
-        🔹 Filter: Menyaring data sesuai kecocokan kata kunci pada nama dan ulasan tempat wisata.
-        🔹 Conquer: Menggabungkan hasil penyaringan.
-        🔹 Sort: Mengurutkan hasil berdasarkan prioritas berikut:
-            1. Relevansi kata kunci (kecocokan input dengan nama/review)
-            2. Rating tertinggi
-            3. Jarak terdekat dari lokasi pengguna
-    5. Menampilkan hasil rekomendasi di terminal secara langsung.
+
+1. Mendeteksi **koordinat pengguna** secara otomatis menggunakan library `geocoder` melalui alamat IP perangkat.  
+2. Meminta **input kata kunci** destinasi wisata dari pengguna.  
+3. Melakukan **pembersihan data teks** (menghapus karakter aneh, simbol, dan emoticon yang tidak diperlukan).  
+4. Memproses data menggunakan algoritma **Divide and Conquer**, dengan tahapan:
+
+   - 🔹 **Divide:** Memecah dataset menjadi beberapa subkelompok.  
+   - 🔹 **Filter:** Menyaring data sesuai kecocokan kata kunci pada nama dan ulasan tempat wisata.  
+   - 🔹 **Conquer:** Menggabungkan hasil penyaringan.  
+   - 🔹 **Sort:** Mengurutkan hasil berdasarkan prioritas berikut:
+     
+        1. Relevansi kata kunci (kecocokan input dengan nama/review)  
+        2. Rating tertinggi  
+        3. Jarak terdekat dari lokasi pengguna  
+
+5. Menampilkan hasil rekomendasi di **terminal** secara langsung.
